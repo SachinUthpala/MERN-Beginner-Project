@@ -4,11 +4,10 @@ import express from "express";
 const app = express();
 const PORT = 5001;
 
-// Middleware
-app.use(express.json());
+
 
 // Test route
-app.get("/", (req, res) => {
+app.get("/api/notes", (req, res) => {
     res.send("MERN Backend is running successfully!");
 });
 
